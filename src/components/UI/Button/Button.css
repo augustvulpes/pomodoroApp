@@ -1,0 +1,25 @@
+.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px 0 rgb(29, 29, 29);
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,94,29,1) 47%, rgba(252,176,69,1) 100%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 5px 0 10px 0 rgba(252,176,69,1), -5px 0 10px 0 rgba(131,58,180,1);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: auto;
+}
+
+.btn:disabled:hover {
+    box-shadow: none;
+}

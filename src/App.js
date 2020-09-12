@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import ProgressCircle from './containers/ProgressCircle/ProgressCircle';
+
 import './App.css';
 
-function App() {
+const App = props => {
+  // An idea for further development:
+  // Implement feature that allows user to select preferred time for pomodoro
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <h1>Pomodoro Timer</h1>
+      <ProgressCircle duration={25 * 60 * 1000}/>
+      <div className="info">
+        <p>Made with <span id="heart">❤</span> by <a id="author" href="https://github.com/NOLONHUM/pomodoroApp" rel="noopener noreferrer" target="_blank">NOLONHUM</a></p>
+      </div>
     </div>
   );
 }
